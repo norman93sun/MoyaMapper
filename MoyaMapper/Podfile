@@ -1,0 +1,50 @@
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://cdn.cocoapods.org/'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+# 忽略引入库的所有警告（强迫症者的福音啊）
+inhibit_all_warnings!
+
+
+target 'MoyaMapper' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GoldExchange
+
+    pod 'Moya'
+    pod 'ObjectMapper'
+
+    pod 'Charts', :git => 'https://github.com/danielgindi/Charts.git', :tag => 'v3.4.0'
+
+    pod 'MBProgressHUD'
+    pod 'MJRefresh'
+    pod 'Parchment'
+    pod 'FSPagerView'
+
+    pod 'SnapKit'
+    pod 'SwifterSwift'
+    pod "AttributedStringBuilder"
+    pod 'Then'
+    pod 'IQKeyboardManagerSwift'
+#    pod 'R.swift'
+
+    pod 'Kingfisher'
+
+    
+    
+    pod 'DoraemonKit/Core', '~> 3.0.1', :configurations => ['Debug'] #必选
+#    pod 'DoraemonKit/WithGPS', '~> 3.0.1', :configurations => ['Debug'] #可选
+    pod 'DoraemonKit/WithLoad', '~> 3.0.1', :configurations => ['Debug'] #可选
+    pod 'DoraemonKit/WithLogger', '~> 3.0.1', :configurations => ['Debug'] #可选
+#    pod 'DoraemonKit/WithDatabase', '~> 3.0.1', :configurations => ['Debug'] #可选
+    pod 'DoraemonKit/WithMLeaksFinder', '~> 3.0.1', :configurations => ['Debug'] #可选
+#    pod 'DoraemonKit/WithWeex', '~> 3.0.1', :configurations => ['Debug'] #可选
+
+#    pod 'FLEX', :configurations => ['Debug']
+    pod 'Bugly'
+
+    
+end
